@@ -4,6 +4,22 @@
 
 @import 'pretendard/dist/web/static/pretendard.css';
 
+@layer base {
+  :root {
+    --primary-Fcolor: #131518;
+    --secondary-Fcolor: #767676;
+    --primary-blue: #b3dcff;
+    --secondary-blue: #196ab0;
+    --primary-pink: #ffc0d5;
+    --secondary-pink: #f86797;
+    --primary-bg: #fff;
+    --secondary-bg: #f0f1f4;
+    --primary-line: #d9d9d9;
+    --secondary-line: #e5e7ea;
+    --primary-accent: #ff5753;
+  }
+}
+
 * {
   box-sizing: border-box;
   font-family: 'pretendard';
@@ -15,8 +31,14 @@ body {
   margin: 0 auto;
   min-width: 375px;
   max-width: 450px;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
 html {
   font-size: 62.5%;
+}
+
+&::-webkit-scrollbar {
+  display: none;
 }
