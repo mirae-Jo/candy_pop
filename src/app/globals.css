@@ -13,5 +13,10 @@ html,
 body {
   padding: 0;
   margin: 0 auto;
-  max-width: 375px; /* you can change according to your website */
+  min-width: 375px;
+  max-width: 450px;
+}
+
+html {
+  font-size: 62.5%;
 }
