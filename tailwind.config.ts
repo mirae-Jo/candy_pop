@@ -13,6 +13,15 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontSize: {
+        sm: '0.8rem',
+        base: '1.2rem',
+        '16px': '1.6rem',
+        '20px': '2rem',
+        '24px': '2.4rem',
+        '28px': '2.8rem',
+        '32px': '3.2rem',
+      },
       colors: {
         ['primary-Fcolor']: 'var(--primary-Fcolor)',
         ['secondary-Fcolor']: 'var(--secondary-Fcolor)',
@@ -27,10 +36,10 @@ const config: Config = {
         ['primary-accent']: 'var(--primary-accent)',
       },
       borderRadius: {
-        '4xl': '0.25rem',
-        '8xl': '0.5rem',
-        '12xl': '0.75rem',
-        '16xl': '1rem',
+        '4xl': '0.4rem',
+        '8xl': '0.8rem',
+        '12xl': '1.2rem',
+        '16xl': '1.6rem',
       },
     },
   },
