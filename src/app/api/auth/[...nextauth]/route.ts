@@ -2,7 +2,6 @@ import type { Adapter } from 'next-auth/adapters';
 import NextAuth from 'next-auth';
 import EmailProvider from 'next-auth/providers/email';
 import { SupabaseAdapter } from '@auth/supabase-adapter';
-import { supabase } from '../../db';
 
 const EMAIL_SERVER = 'smtp://mirae9873:adxvwfgfmznpuphs@smtp.gmail.com:587'; // process.env.EMAIL_SERVER;
 const EMAIL_FROM = 'noreply@candypop.com'; // process.env.EMAIL_FROM;
