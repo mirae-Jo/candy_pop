@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import candyPopLogo from '@/assets/logo.png';
 import RightArrowSvg from '@/assets/RightArrowSvg';
+import Link from 'next/link';
 
 const FirstVisitor = () => {
   return (
@@ -15,12 +16,16 @@ const FirstVisitor = () => {
             className='w-[32rem]'
             src={candyPopLogo}
             alt='candy pop logo'
+            priority
           />
         </h1>
-        <button className='mt-[0.8rem] w-[32rem] h-[4.4rem] bg-secondary-pink rounded-16xl flex items-center justify-center gap-[1.5rem]'>
+        <Link
+          href={'/auth'}
+          className='mt-[0.8rem] w-[32rem] h-[4.4rem] bg-secondary-pink rounded-16xl flex items-center justify-center gap-[1.5rem]'
+        >
           <span className='text-24px text-white font-light'>시작하기</span>
           <RightArrowSvg />
-        </button>
+        </Link>
       </div>
     </div>
   );

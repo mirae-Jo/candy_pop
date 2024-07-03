@@ -1,9 +1,5 @@
-import FirstVisitor from './_components/FirstVisitor';
+import Main from './_components/Main';
 
-export default function Home() {
-  return (
-    <div>
-      <FirstVisitor />
-    </div>
-  );
+export default async function Home() {
+  return <Main />;
 }
