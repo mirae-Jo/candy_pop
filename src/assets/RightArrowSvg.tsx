@@ -9,27 +9,27 @@ const RightArrowSvg = () => {
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
     >
-      <g clip-path='url(#clip0_85_121)'>
+      <g clipPath='url(#clip0_85_121)'>
         <path
           d='M6.25 15L23.75 15'
           stroke='white'
-          stroke-width='1.5'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='1.5'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <path
           d='M16.25 22.5L23.75 15'
           stroke='white'
-          stroke-width='1.5'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='1.5'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <path
           d='M16.25 7.5L23.75 15'
           stroke='white'
-          stroke-width='1.5'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='1.5'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
       </g>
       <defs>

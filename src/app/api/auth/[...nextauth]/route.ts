@@ -13,6 +13,21 @@ const handler = NextAuth({
       from: EMAIL_FROM,
     }),
   ],
+  callbacks: {
+    async redirect({ url, baseUrl }) {
+      console.log(baseUrl);
+      return baseUrl;
+    },
+    // async jwt({ token, account }) {
+    //   if (account) {
+    //     token.accessToken = account.access_token;
+    //   }
+    //   return token;
+    // },
+    // async session({ session, token }) {
+    //   return session;
+    // },
+  },
   adapter: SupabaseAdapter({
     url: process.env.NEXT_PUBLIC_SUPABASE_URL as string,
     secret: process.env.NEXT_PUBLIC_SUPABASE_SERVICE_ROLE_KEY as string,

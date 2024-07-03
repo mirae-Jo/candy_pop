@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import './globals.css';
+import AuthSession from './_components/AuthSession';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -13,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body>
+        <AuthSession>{children}</AuthSession>
+      </body>
     </html>
   );
 }
