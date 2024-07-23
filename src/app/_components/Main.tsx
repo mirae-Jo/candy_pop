@@ -3,10 +3,10 @@ import { useSession } from 'next-auth/react';
 import FirstVisitor from './FirstVisitor';
 
 const Main = () => {
-  const session = useSession();
-  console.log(session);
+  const { data: session } = useSession();
+  console.log(session?.user?.name);
   const FirstVisit = () => {
-    return session.data ? <div>환영합니다</div> : <FirstVisitor />;
+    return session?.user ? <div>환영합니다</div> : <FirstVisitor />;
   };
 
   return <FirstVisit />;
